@@ -1,7 +1,7 @@
 /**
  * Problem 2 - CS603
  * Created by Jialu (Max) XU
- * on 2016/9/11.
+ * on 9/11/2016.
  */
 
 import java.util.Scanner;
