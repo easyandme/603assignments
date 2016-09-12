@@ -1,5 +1,5 @@
 /**
- * Problem 1 - CS605
+ * Problem 1 - CS603
  * Jialu (Max) Xu
  * created on 9/9/16
  */
