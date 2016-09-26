@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://pages.wustl.edu/montgomery/articles/6065 -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="HTML+RDFa 1.1" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<!--[if lt IE 9]><script type="text/javascript" src="/sites/all/themes/innovate/scripts/html5.js?od52xb"></script><![endif]--><link rel="shortcut icon" href="https://pages.wustl.edu/sites/pages.wustl.edu/themes/profiles/toast_and_jam/favicon.ico" type="image/vnd.microsoft.icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="shortlink" href="https://pages.wustl.edu/node/6065">
+<meta name="Generator" content="Drupal 7 (http://drupal.org)">
+<link rel="canonical" href="https://pages.wustl.edu/montgomery/articles/6065">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>Estimating population means using confidence intervals | Jacob Montgomery</title>
+    <link type="text/css" rel="stylesheet" href="./Estimating population means using confidence intervals _ Jacob Montgomery_files/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all">
+<link type="text/css" rel="stylesheet" href="./Estimating population means using confidence intervals _ Jacob Montgomery_files/css_P71y2zT4ekxKFxKmh-xsip-txVkRBWNYaX-4elB1r5c.css" media="screen">
+<link type="text/css" rel="stylesheet" href="./Estimating population means using confidence intervals _ Jacob Montgomery_files/css_XnqRtbDuQixRC7yJY2yaXJkW97qkmuJh_JcJiXppnCA.css" media="all">
+<link type="text/css" rel="stylesheet" href="./Estimating population means using confidence intervals _ Jacob Montgomery_files/css_cU3O9S3UD39xxUVyOke0zJumT8AEietWhfxgm5ocEmE.css" media="all">
+<link type="text/css" rel="stylesheet" href="./Estimating population means using confidence intervals _ Jacob Montgomery_files/css_DWPYTaZP2gGao6omeTINDslfzQowIJrrp1ASKETTOGk.css" media="all">
+<link type="text/css" rel="stylesheet" href="./Estimating population means using confidence intervals _ Jacob Montgomery_files/css_iLhXkNhHSqJX6rKEieEFlZr2tuY4IW_mm3v0BIS911U.css" media="screen">
+<link type="text/css" rel="stylesheet" href="./Estimating population means using confidence intervals _ Jacob Montgomery_files/css_OF-ro9xGfLiKzLxUFuAhYPuYCadII2_jbt22RGCQ6WY.css" media="handheld, only screen and (max-width: 767px)">
+<link type="text/css" rel="stylesheet" href="./Estimating population means using confidence intervals _ Jacob Montgomery_files/css_Tuq8NnQU2u2oOjPX8LEIDKpgjiCBdsR-COOYw_xpfMY.css" media="print">
+<link type="text/css" rel="stylesheet" href="./Estimating population means using confidence intervals _ Jacob Montgomery_files/css_ahUaPXgor1souSdi6yLViW_WFu5UQQ1KYEoyAVGsHyo.css" media="handheld, only screen and (max-width: 480px)">
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="https://pages.wustl.edu/files/pages/css/css_KHVZdciTQ9NLR5qC9yFi34NDUDVt77RAYvQyNmD6VF4.css" media="all" />
+<![endif]-->
+
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" href="https://pages.wustl.edu/files/pages/css/css_vg4P01_bmwV3jkBwpK1iWInc9pd4boheygeNZUxMrI0.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="./Estimating population means using confidence intervals _ Jacob Montgomery_files/css_eldjbgj0q42dWtv2HiTgnPqsSHWrzZPQWl3Z0WGCEwM.css" media="screen">
+<link type="text/css" rel="stylesheet" href="./Estimating population means using confidence intervals _ Jacob Montgomery_files/css_UvUJ0GA8U6GFYLKWKoFxAnP06fEwumPTXWF6fGmmwyY.css" media="handheld, only screen and (max-device-width: 480px)">
+  <script src="chrome-extension://jgghnecdoiloelcogfmgjgcacadpaejf/inject.js"></script></head>
+
+  <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-6065 node-type-article og-context og-context-node og-context-node-1357 no-pane-margins node-display-submitted page-panels with-artsci-logos top-menu">
+    <div id="skip-link">
+      <a href="https://pages.wustl.edu/montgomery/articles/6065#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+        
+<div id="page-wrapper" class="page">
+  <div id="page">
+    <header id="header" role="banner">
+      <div class="pagewidth clearfix">
+        <div class="top-header">
+                       <ul id="school-and-university"><li class="artsci-logo first"><a href="http://artsci.wustl.edu/" title="Arts &amp; Sciences" alt="Arts &amp;amp; Sciences" target="_blank"><span class="element-invisible">Arts &amp; Sciences</span></a></li>
+<li class="wustl-logo last"><a href="http://wustl.edu/" title="Washington University in St. Louis" alt="Washington University in St. Louis" target="_blank"><span class="element-invisible">Washington University in St. Louis</span></a></li>
+</ul>                                <section class="region region-header">
+    <div id="block-block-2" class="block block-block">
+  <div class="panel-inner block-inner">
+
+              
+    <div class="content clearfix">
+      <p><a href="https://pages.wustl.edu/user/login">Admin Log In</a></p>    </div> <!-- /.content -->
+
+  </div>
+</div> <!-- /.block -->
+  </section>
+        </div>
+
+        <div class="bottom-header">
+        
+                  <hgroup id="name-and-slogan">
+            
+                                             <h1 id="site-name">
+                     <a href="https://pages.wustl.edu/montgomery" title="Home" rel="home"><span>Jacob Montgomery</span></a>
+                  </h1>
+                           
+                          <div id="site-slogan">Department of Political Science</div>
+            
+          </hgroup> <!-- /#name-and-slogan -->
+                </div>
+
+                  <nav id="navbar" role="navigation">
+                            <section class="region region-menu-bar">
+    <div id="block-og-menu-og-single-menu-block" class="block block-og-menu">
+  <div class="panel-inner block-inner">
+
+              
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf"><a href="https://pages.wustl.edu/montgomery">Home</a></li>
+<li class="leaf"><a href="https://pages.wustl.edu/montgomery/curriculum-vitae">CV</a></li>
+<li class="collapsed"><a href="https://pages.wustl.edu/montgomery/research-0" title="Publications, working papers, software, replication files">Research</a></li>
+<li class="collapsed"><a href="https://pages.wustl.edu/montgomery/teaching">Teaching</a></li>
+<li class="expanded active-trail"><a href="https://pages.wustl.edu/montgomery/qpm" title="Quantitative Political Methods (PS 363)" class="active-trail">QPM</a></li>
+<li class="last leaf"><a href="https://pages.wustl.edu/montgomery/search">Search</a></li>
+</ul>    </div> <!-- /.content -->
+
+  </div>
+</div> <!-- /.block -->
+  </section>
+                      </nav> <!-- /nav -->
+              </div>
+    </header> <!-- /header -->
+
+    <div id="main" role="main">
+      <div class="pagewidth clearfix">
+
+        
+        <div id="content" class="clearfix">
+                                                                      <a id="main-content" class="element-invisible element-focusable"></a>
+            <section class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+  <div class="content">
+    <div class="panel-display captivate container_16">
+
+    <div class="panel-row clearfix">
+    <div class="panel-full-top panel-panel panel-col-full grid_16">
+      <div class="panel-content-color">
+        <div class="pane-no-padding"></div>      </div>
+    </div>
+  </div>
+  
+    <div class="panel-row panel-row-resize panel-row-11-5 clearfix">
+    <div class="panel-elevencol-top-left panel-panel panel-col panel-col-first grid_11">
+      <div class="panel-content-color">
+        <div class="panel-pane pane-page-breadcrumb">
+  <div class="panel-inner pane-inner">
+  
+      
+              
+      
+    <div class="pane-content">
+       
+        <div class="breadcrumb"><h2 class="element-invisible">You are here</h2><a href="https://pages.wustl.edu/montgomery">Home</a> / <a href="https://pages.wustl.edu/montgomery/qpm" title="Quantitative Political Methods (PS 363)">QPM</a> / <a href="https://pages.wustl.edu/montgomery/teaching/quantitative-political-methods/course-book">Course Book</a> / Estimating population means using confidence intervals</div>          </div>
+  
+      
+      
+  </div>
+</div><div class="panel-separator"></div><section class="panel-pane pane-node-content">
+  <div class="panel-inner pane-inner">
+  
+      
+    <div class="pane-node-created">September 21, 2016</div>                  <h1 class="pane-title">Estimating population means using confidence intervals</h1>
+                
+      
+    <div class="pane-content">
+       
+        <article id="node-6065" class="node node-article clearfix" about="/montgomery/articles/6065" typeof="sioc:Item foaf:Document">
+  <div class="content">
+    <div class="field field-name-field-article-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><script async="" src="./Estimating population means using confidence intervals _ Jacob Montgomery_files/analytics.js.下载"></script><script type="text/x-mathjax-config">
+<!--//--><![CDATA[// ><!--
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+//--><!]]>
+</script><script type="text/javascript" src="./Estimating population means using confidence intervals _ Jacob Montgomery_files/MathJax.js.下载">
+<!--//--><![CDATA[// ><!--
+
+
+//--><!]]>
+</script><h3>Learning Objectives</h3><ol><li>Understand what statistical inference is</li><li>Understand how we make statistical inferences using sample statistics to estimate population parameters</li><li>&nbsp;Understand what kind of estimate a confidence interval is</li><li>Understand how to do a simple confidence interval calculation</li></ol><h3>Statistical inference is how we draw conclusions from the data…</h3><p><span style="font-size: 12px; line-height: 1.5;"><strong>Statistical inference</strong> is the process that we use to draw conclusions from a data. A set of data is a <em>sample</em> from our population.&nbsp;</span><span style="font-size: 12px; line-height: 1.5;">The </span><strong style="font-family: inherit; font-style: inherit; line-height: 1.5;">sample</strong><span style="font-size: 12px; line-height: 1.5;"> is a subset of the </span><strong style="font-family: inherit; font-style: inherit; line-height: 1.5;">population</strong>. &nbsp;Inference involves using statistics we calculate from the sample to make and informed guess about&nbsp;<span style="font-size: 12px; line-height: 1.5;">population. </span></p><p><span style="font-size: 12px; line-height: 1.5;">When we do statistical inference we are interested in drawing conclusions from a set of data (sample) so that we can estimate <strong>population parameters</strong>. (Population parameters are the characteristics of the population in which we are interested.) Parameters of the population include things like the mean, standard deviation, and variance.</span></p><p><span style="font-size: 12px; line-height: 1.5;">Statistical inference is the process by which we use sample statistics to make inferences about population parameters.&nbsp;</span><span style="font-size: 12px; line-height: 1.5;">Figure 1 and Table 1 describe the relationship between sample statistics and population parameters.&nbsp;</span></p><p><img alt="" src="./Estimating population means using confidence intervals _ Jacob Montgomery_files/illustration.png" style="font-size: 12px; line-height: 1.5; width: auto; height: auto;"></p><p><img alt="" src="./Estimating population means using confidence intervals _ Jacob Montgomery_files/comparisontable.png" style="font-size: 12px; line-height: 1.5; width: auto; height: auto;"></p><h3>We make statistical inferences by using sample statistics to estimate population parameters…</h3><p><span style="font-size: 12px; line-height: 1.5;">Using sample statistics we can make estimates about population parameters. There are two types of estimates of parameters: <strong>point estimates</strong> and <strong>interval estimates</strong>. A point estimate is a single number that is the best guess for the parameter. An interval estimate is an interval of numbers around the point estimate, within which the parameter value is believed to fall. </span></p><h3>The method we use to make statistical inferences using sample statistics is called estimation…</h3><p>The term <strong>estimator</strong> refers to a particular type of statistic for estimating a parameter. This is conceptual. &nbsp; The term <strong>estimate</strong>&nbsp;is a noun that refers to the value of that particular statistic. For example, the sample mean is an estimator of a population mean. If the sample mean of a particular sample 75 then the value 75 is the estimate for the population mean.</p><p>Just as there are multiple possible sample statistics, &nbsp;there are are many possible estimators.&nbsp;<span style="font-size: 12px; line-height: 1.5;">If we are interested, for example, in the population’s mean, then we could use the mean, the median, or the mode of the sample as our estimator. &nbsp;How do statisticians decide which estimator is best?</span></p><p><span style="font-size: 12px; line-height: 1.5;">Good estimators usually have two qualities: they are &nbsp;<strong>unbiased</strong> and <strong>efficient</strong>. An unbiased estimator has its sampling distribution "centered" around the parameter; in other words, the expected value of the statistic is identical to the population parameter. An efficient estimator has a relatively small standard error, meaning that the variance of the sampling distribution is small. Unbiased and efficient estimators give us accurate and precise &nbsp;estimates of population parameters. The point estimators we teach you in this class have been shown to be the most efficient unbiased estimators possible.&nbsp;</span></p><h3>Constructing confidence intervals to make statistical inferences…</h3><p><span style="font-size: 12px; line-height: 1.5;">A truly informative statistical inference, however, should provide not only a point estimate but should also indicate how confident we can be that the estimate is correct. &nbsp;So, rather than a single value, we often prefer to use a <strong>range</strong> of values. This is what is known as an <strong>interval estimate</strong>: an interval of numbers (usually centered around some point estimate) within which the parameter value is believed to fall.&nbsp;</span><span style="font-size: 12px; line-height: 1.5;">Another name for interval estimates is </span><strong style="font-family: inherit; font-style: inherit; line-height: 1.5;">confidence intervals</strong><span style="font-size: 12px; line-height: 1.5;">, because they contain the parameter with a certain degree of confidence.&nbsp;</span></p><p><span style="font-size: 12px; line-height: 1.5;">Confidence intervals have the following form: </span></p><p style="text-align: center;"><span style="font-size: 12px; line-height: 1.5;">Point estimate $\pm$ Margin of Error. </span></p><h3>Specifically, we can calculate confidene intervals for the sample mean ....</h3><p><span style="font-size: 12px; line-height: 1.5;">Under certain circumstances, confidence intervals for means take the following formula: </span></p><p>$$\bar{y} \pm z (\frac{s}{\sqrt{n}}) $$</p><p>Where,</p><ul><li><span style="font-size: 12px; line-height: 1.5;">$\bar{y}$&nbsp;</span><span style="font-size: 12px; line-height: 1.5;">= sample mean&nbsp;</span></li><li><span style="font-size: 12px; line-height: 1.5;">$z$ = z-score corresponding to confidence level&nbsp;</span></li><li><span style="font-size: 12px; line-height: 1.5;">$s$ = sample standard deviation </span></li><li><span style="font-size: 12px; line-height: 1.5;">$n$ = sample size&nbsp;</span></li></ul><p><span style="font-size: 12px; line-height: 1.5;">​</span><span style="font-size: 12px; line-height: 1.5;">The point estimate of the population mean $\mu$ is the sample mean $\bar{y}$. For large random samples, by the Central Limit Theorem, the sampling distribution of is approximately normal. So, for large samples, we can find a margin of error by multiplying a z-score from the normal distribution by the standard error. </span></p><h3>Remember that we already learned about the standard error ....</h3><p>The standard error of the sample mean is &nbsp;given by the following equation:</p><p>$$\sigma_\bar{y} = \frac{\sigma}{\sqrt{n}}&nbsp;$$</p><p><span style="font-size: 12px; line-height: 1.5;">In the above equation, $\sigma$ is the population standard deviation. But like $\mu$, $\sigma$ is an unknown parameter. In practice, we estimate $\sigma$ using the sample standard deviation $s$. So, in practice, confidence intervals use the </span><em style="font-size: 12px; line-height: 1.5;">estimated</em><span style="font-size: 12px; line-height: 1.5;"> standard error. This is how we end up with the equation for confidence intervals:&nbsp;</span></p><p><span style="font-size: 12px; line-height: 1.5;">$$\hat{\sigma}_\bar{y} = \frac{s}{\sqrt{n}}&nbsp;$$</span></p><p>&nbsp;</p><h3 style="font-style: normal; line-height: 18px;">Remember that we already learned about the z-score ....&nbsp;</h3><p><span style="font-size: 12px; line-height: 1.5;">When we are calculating a confidence interval for a mean, our point estimate is our sample mean. Our standard error is calculated by dividing the sample standard deviation by the square root of the sample size. We have yet to understand where the z-score comes from. </span></p><p><span style="font-size: 12px; line-height: 1.5;">The z-score corresponds to the confidence level we are interested in. We choose a <strong>confidence level</strong> before we go about constructing our <strong>confidence interval.</strong> We try to choose confidence levels that are close to (but not exactly) 100%. The higher the confidence level, the more confident we can be that our unknown parameter falls within the interval estimate. </span></p><p><span style="font-size: 12px; line-height: 1.5;">The z-score indicates what our confidence interval is. Recall that 95% of the normal distribution falls within 1.96 standard deviations of the mean. We use the same logic to calculate the z-score for our confidence intervals. If we are interested in a 95% confidence interval, then our z-score is 1.96; if we are interested in a 99% confidence level, then our z-score is 2.575. </span></p><p><span style="font-size: 12px; line-height: 1.5;">In general, in order to find the z-score that corresponds to our confidence level, we take</span></p><p><span style="font-size: 12px; line-height: 1.5;">$$(1-\mbox{confidence coefficient)}/2.$$ </span></p><p><span style="font-size: 12px; line-height: 1.5;">The z-score that corresponds with the resulting probability is the z-score that we use when we construct our confidence interval. </span></p><p>NOTE: The confidence coefficient is often denoted by the Greek letter $\alpha$</p><h3>Example…</h3><p><span style="font-size: 12px; line-height: 1.5;">Let’s do a quick example. </span></p><p><span style="font-size: 12px; line-height: 1.5;">Let’s suppose we have a sample in which the sample mean is 10 and the standard <em>error</em> is $\frac{s}{\sqrt{n}}=2$.&nbsp;</span><span style="font-size: 12px; line-height: 1.5;">We want to calculate a 95% confidence interval. We use the following formula: </span></p><p>$$\bar{y}\pm z(\frac{s}{\sqrt{n}}) = 10 \pm z(2) $$</p><p><span style="font-size: 12px; line-height: 1.5;">In this case, the z-score that corresponds to a 95% confidence interval is $z=1.96$. </span></p><p>$$10 \pm 1.96(2) = 10 \pm 3.92$$</p><p><span style="font-size: 12px; line-height: 1.5;">Note that the formula above is only <em>representative </em>of our confidence interval. &nbsp;It shows our original point estimate and margin error.&nbsp;</span><span style="font-size: 12px; line-height: 1.5;">Our confidence interval must be a range of numbers &nbsp;In this case, it is: [6.08, 13.92]. What does this mean? It means, (kinf of) that according to our calculations, we can say with 95% confidence that our population mean falls between 6.08 and 13.92.</span></p><p>Technically, however, that interpretation is not quite right. &nbsp;The 95% confidence level means that <em>if</em>&nbsp;we took many, many samples and calculated many, many confidence intervals according the procedures above, 95% of the time the true population parameter would fall within those many, many 95% confidence intervals. &nbsp;We actually don't know the probabilyt that $\mu$ falls within the particualr interval&nbsp;<span style="font-size: 12px; line-height: 1.5;">[6.08, 13.92]. &nbsp;</span><span style="font-size: 12px; line-height: 1.5;">This is a bit confusing to think about, and most of the time you can think of it using the sentence in the last paragraph. &nbsp;But, keep in mind that the actual interpretation is a bit muddier.</span></p><p><span style="font-size: 12px; line-height: 1.5;">Here is a nice video that goes through another example and explains the relationship between the confidence interval and the normal distribution:&nbsp;</span></p><p><iframe allowfullscreen="" frameborder="0" height="315" src="./Estimating population means using confidence intervals _ Jacob Montgomery_files/dNfpsVLaaEE.html" width="560"></iframe></p><h3>Conclusion…</h3><p><span style="font-size: 12px; line-height: 1.5;">In this section we learned that we make statistical inferences to make conclusions from our data. Statistical inference requires that we estimate population parameters using sample statistics. </span></p><p><span style="font-size: 12px; line-height: 1.5;">One way we can make a statistical inference is by constructing confidence intervals. Confidence intervals give us an interval of numbers around the point estimate within which the parameter value is believed to fall. </span></p><p><span style="font-size: 12px; line-height: 1.5;">Although confidence intervals can be constructed for means or proportions, in this article, we learned that how to construct a confidence interval for a population mean (parameter) using the sample mean and sample standard deviation (sample statistics).</span></p></div></div></div><div class="field field-name-field-article-tags field-type-taxonomy-term-reference field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://pages.wustl.edu/tags/class-material?og_group_ref=1357" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">class material</a></div><div class="field-item odd"><a href="https://pages.wustl.edu/tags/estimation?og_group_ref=1357" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">estimation</a></div></div></div>  </div>
+
+  
+  
+</article>
+          </div>
+  
+      
+      
+  </div>
+</section>      </div>
+    </div>
+    <div class="panel-fivecol-top-right panel-panel panel-col panel-col-last grid_5">
+      <div class="panel-content-color">
+        <div class="panel-pane pane-block pane-og-menu-og-single-menu-block">
+  <div class="panel-inner pane-inner">
+  
+      
+              
+      
+    <div class="pane-content">
+       
+        <ul class="menu"><li class="first leaf"><a href="https://pages.wustl.edu/montgomery">Home</a></li>
+<li class="leaf"><a href="https://pages.wustl.edu/montgomery/curriculum-vitae">CV</a></li>
+<li class="collapsed"><a href="https://pages.wustl.edu/montgomery/research-0" title="Publications, working papers, software, replication files">Research</a></li>
+<li class="collapsed"><a href="https://pages.wustl.edu/montgomery/teaching">Teaching</a></li>
+<li class="expanded active-trail"><a href="https://pages.wustl.edu/montgomery/qpm" title="Quantitative Political Methods (PS 363)" class="active-trail">QPM</a><ul class="menu"><li class="first leaf"><a href="https://www.facebook.com/groups/1754743598147163/" title="Facebook group for the class" target="_blank">Facebook</a></li>
+<li class="leaf"><a href="https://pages.wustl.edu/montgomery/teaching/quantitative-political-methods/syllabus">Syllabus</a></li>
+<li class="expanded active-trail"><a href="https://pages.wustl.edu/montgomery/teaching/quantitative-political-methods/course-book" class="active-trail">Course Book</a><ul class="menu"><li class="first leaf"><a href="https://pages.wustl.edu/montgomery/descriptive-statistics">Descriptive statistics</a></li>
+<li class="leaf"><a href="https://pages.wustl.edu/montgomery/teaching/quantitative-political-methods/course-book/probability">Probability</a></li>
+<li class="leaf"><a href="https://pages.wustl.edu/montgomery/teaching/quantitative-political-methods/course-book/inference-1-estimation">Inference 1: Estimation</a></li>
+<li class="leaf"><a href="https://pages.wustl.edu/montgomery/teaching/quantitative-political-methods/course-book/inference-2-hypothesis-testing">Inference 2: Hypothesis testing</a></li>
+<li class="leaf"><a href="https://pages.wustl.edu/montgomery/teaching/quantitative-political-methods/course-book/regression-0">Regression</a></li>
+<li class="leaf"><a href="https://pages.wustl.edu/montgomery/teaching/quantitative-political-methods/course-book/r-and-r-commander">R and R Studio</a></li>
+<li class="last leaf active-trail"><a href="https://pages.wustl.edu/montgomery/articles/6065" class="menu-position-link active-trail active">Estimating population means using confidence intervals</a></li>
+</ul></li>
+<li class="leaf"><a href="https://pages.wustl.edu/montgomery/qpm-team">QPM Team</a></li>
+<li class="leaf"><a href="https://pages.wustl.edu/montgomery/qpm/resources">Resources</a></li>
+<li class="leaf"><a href="https://pages.wustl.edu/montgomery/qpm/class-datasets">Class Datasets</a></li>
+<li class="last leaf"><a href="https://pages.wustl.edu/montgomery/qpm/lecture-and-lab-slides">Lecture and Lab Slides</a></li>
+</ul></li>
+<li class="last leaf"><a href="https://pages.wustl.edu/montgomery/search">Search</a></li>
+</ul>          </div>
+  
+      
+      
+  </div>
+</div>      </div>
+    </div>
+  </div>
+  
+  
+    
+  
+</div>
+  </div> <!-- /.content -->
+    
+</div> <!-- /.block -->  </section>
+        </div>
+      </div>
+    </div> <!-- /#main -->
+          <footer id="footer" role="contentinfo">
+        <div class="pagewidth clearfix">
+            <section class="region region-footer">
+    <div id="block-block-1" class="block block-block">
+  <div class="panel-inner block-inner">
+
+              
+    <div class="content clearfix">
+      <p>&nbsp;Arts &amp; Sciences | Washington University in St. Louis | One Brookings Drive, St. Louis, MO 63130-4899</p>    </div> <!-- /.content -->
+
+  </div>
+</div> <!-- /.block -->
+  </section>
+        </div>
+      </footer>
+     </div>
+</div> <!-- /#page-wrapper -->
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.google_analytics_uacct = "UA-34483428-1";
+//--><!]]>
+</script>
+<script type="text/javascript" src="./Estimating population means using confidence intervals _ Jacob Montgomery_files/js_UWQINlriydSoeSiGQxToOUdv493zEa7dpsXC1OtYlZU.js.下载"></script>
+<script type="text/javascript" src="./Estimating population means using confidence intervals _ Jacob Montgomery_files/js_WdgkSSE6ZWi5tkq_hs1FAXQjojTU3hF5LNne5a_dhZM.js.下载"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-34483428-1", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="./Estimating population means using confidence intervals _ Jacob Montgomery_files/js_nFxAQFTFfgeDAg2tCyNUEIHCvGubPdwCBvYg28ryN6g.js.下载"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"toast_and_jam","theme_token":"YfWZDVFz3SGha41CXgYZE4hZTyGdGz5JWoKDZ7Oo1Xs","js":{"0":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/stockholmsyndrome\/colorbox_style.js":1,"sites\/all\/modules\/contrib\/panels\/js\/panels.js":1,"sites\/all\/modules\/contrib\/extlink\/extlink.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"1":1,"sites\/all\/themes\/innovate\/scripts\/mobility.js":1,"sites\/all\/themes\/innovate\/scripts\/imagecaptions.js":1,"sites\/all\/themes\/awesomesauce\/scripts\/awesomesauce.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/custom\/artsci_streaming\/css\/artsci_streaming_main.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/stockholmsyndrome\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/modules\/contrib\/extlink\/extlink.css":1,"sites\/all\/themes\/innovate\/panels\/layouts\/captivate\/..\/..\/..\/lib\/grid.css":1,"sites\/all\/themes\/innovate\/lib\/reset.css":1,"sites\/all\/themes\/innovate\/css\/html.css":1,"sites\/all\/themes\/innovate\/lib\/grid.css":1,"sites\/all\/themes\/innovate\/css\/layout.css":1,"sites\/all\/themes\/innovate\/css\/elements.css":1,"sites\/all\/themes\/awesomesauce\/css\/color.css":1,"sites\/all\/themes\/innovate\/css\/admin.css":1,"sites\/all\/themes\/awesomesauce\/css\/content-types.css":1,"sites\/all\/themes\/awesomesauce\/css\/views.css":1,"sites\/all\/themes\/awesomesauce\/css\/misc.css":1,"sites\/pages.wustl.edu\/themes\/profiles\/profiles.css":1,"sites\/pages.wustl.edu\/themes\/profiles\/pages.less":1,"sites\/pages.wustl.edu\/themes\/profiles\/toast_and_jam\/color.css":1,"sites\/all\/themes\/innovate\/css\/mobile.css":1,"sites\/all\/themes\/innovate\/css\/iphone.css":1,"sites\/all\/themes\/awesomesauce\/css\/print.css":1,"sites\/pages.wustl.edu\/themes\/profiles\/iphone.css":1,"sites\/all\/themes\/innovate\/css\/ie.css":1,"sites\/all\/themes\/innovate\/css\/ie6.css":1,"sites\/all\/themes\/awesomesauce\/css\/branding.css":1,"sites\/all\/themes\/awesomesauce\/css\/iphone-branding.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"extlink":{"extTarget":"_blank","extClass":0,"extSubdomains":0,"extExclude":"","extInclude":".*\\.pdf","extAlert":0,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"ogContext":{"groupType":"node","gid":"1357"},"awesomesauce":{"albumcaptions":"0","articlecaptions":"1","eventcaptions":"1"}});
+//--><!]]>
+</script>
+      <section class="region region-page-bottom">
+    
+    <!--[if IE 6]>
+      <script type="text/javascript">
+        var IE6UPDATE_OPTIONS = {
+          icons_path: "https://pages.wustl.edu/sites/all/modules/contrib/ie6update/images/",
+          message: "Internet Explorer is missing updates required to view this site. Click here to update... ",
+          url: "http://www.microsoft.com/windows/internet-explorer/default.aspx"
+        }
+      </script>
+      <script type="text/javascript" src="https://pages.wustl.edu/sites/all/modules/contrib/ie6update/ie6update.js"></script>
+    <![endif]-->
+    </section>
+  
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><button type="button" id="cboxClose"></button></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><audio controls="controls" style="display: none;"></audio></body><style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style></html>
