@@ -15,10 +15,10 @@ public class MasterMind {
 
         Scanner kb = new Scanner(System.in);
 
-        final char[] secretCode = SecretCode.generateCode();
-        final int    guessLimit = 10;
-        final char   start      = 'a';
-        final char   end        = 'f';
+        final int    GUESSLIMIT = 10;
+        final char   START      = 'a';
+        final char   END        = 'f';
+        char[] secretCode = SecretCode.generateCode();
         char[] inputArray  = new char[secretCode.length];       // 4
         int[]  matchResult = new int[2];                         // initialize a match result array containing 2 values: exact and partial match
         int    guessCount  = 0;                                   // count from 0
@@ -37,7 +37,7 @@ public class MasterMind {
                 // i times 2 to get the indexes of the letters, then convert them to lower case
             }
 
-            if (!checkArrayRange(inputArray, start, end)) {
+            if (!checkArrayRange(inputArray, START, END)) {
                 System.out.println("*** Enter only letters between 'a' and 'f' ***");
                 guessCount -= 1;   // out-of-range input doesn't count
             } else {
@@ -52,9 +52,9 @@ public class MasterMind {
                 }
             }
 
-        } while (matchResult[0] != secretCode.length && guessCount < guessLimit);
+        } while (matchResult[0] != secretCode.length && guessCount < GUESSLIMIT);
 
-        if (guessCount == guessLimit && matchResult[0] != secretCode.length) {
+        if (guessCount == GUESSLIMIT && matchResult[0] != secretCode.length) {
             System.out.print("\nYou lost. The correct code was: ");
             printArray(secretCode);
         }
