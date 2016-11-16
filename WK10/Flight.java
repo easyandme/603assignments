@@ -1,4 +1,6 @@
 /**
+ *  Assignment 5 - CS603
+ *  Created by Max (Jialu) Xu on 11/15/2016.
  *  Flight class - each flight has a flight number, departure and
  *  arrival cities, a list of seats, and a number of rows,
  *  with 5 seats per row.

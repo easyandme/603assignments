@@ -1,6 +1,8 @@
-/**
- * Seat on a plane - represented by a row number and a seatID (String) Each seat
- * has one passenger - can assign passenger to and remove passenger from a seat
+/** 
+ *  Assignment 5 - CS603
+ *  Created by Max (Jialu) Xu on 11/15/2016.
+ *  Seat on a plane - represented by a row number and a seatID (String) Each seat
+ *  has one passenger - can assign passenger to and remove passenger from a seat
  */
 
 public class Seat {

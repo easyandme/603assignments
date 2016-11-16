@@ -1,4 +1,6 @@
 /**
+ *  Assignment 5 - CS603
+ *  Created by Max (Jialu) Xu on 11/15/2016.
  *  Passenger on a flight
  *  Passenger has first and last name with optional
  *  middle name. Also keeps track of if the passenger
@@ -22,7 +24,7 @@ public class Passenger {
         this.setLname(lname);
         this.setFname(fname);
         this.setMname(mname);
-        this.setSpecialMeal(specialMeal);
+        this.specialMeal = specialMeal; // there's a set method for specialMeal though, but there's no extra logic in it
     }
     /**
      *  3-arg constructor used for instantiating a passenger
